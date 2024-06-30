@@ -106,7 +106,6 @@ function App() {
   return (
     <>
       <div className="background">
-        <div className="background--mask"></div>
       </div>
       <NavBar itemData={navbarItems}></NavBar>
       <BodyContent>

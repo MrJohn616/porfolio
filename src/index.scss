@@ -11,22 +11,18 @@
 @use "./components/Footer/footer";
 
 $grid-color: #4f4f4f2e;
-$grid-size: 14px 24px;
+$grid-size: 14px 29px;
 $mask-color: #000;
 
-.background {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: #292524; // Equivalent to bg-slate-950 in Tailwind CSS
-
-  .background--mask {
+#root {
+  // position: relative;
+  background-color: #000;
+  .background {
     position: fixed;
-    top: 0;
+    top: 45px;
     right: 0;
     bottom: 0;
     left: 0;
-
     background-image: linear-gradient(
         to right,
         $grid-color 1px,
@@ -34,8 +30,6 @@ $mask-color: #000;
       ),
       linear-gradient(to bottom, $grid-color 1px, transparent 1px);
     background-size: $grid-size;
-
-    // Apply mask
     mask-image: radial-gradient(
       ellipse 60% 50% at 50% 0%,
       $mask-color 70%,

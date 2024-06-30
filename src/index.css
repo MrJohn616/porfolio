@@ -677,20 +677,17 @@ body {
   text-decoration: underline;
 }
 
-.background {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: #292524;
+#root {
+  background-color: #000;
 }
-.background .background--mask {
+#root .background {
   position: fixed;
-  top: 0;
+  top: 45px;
   right: 0;
   bottom: 0;
   left: 0;
   background-image: linear-gradient(to right, rgba(79, 79, 79, 0.1803921569) 1px, transparent 1px), linear-gradient(to bottom, rgba(79, 79, 79, 0.1803921569) 1px, transparent 1px);
-  background-size: 14px 24px;
+  background-size: 14px 29px;
   -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
           mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
 }/*# sourceMappingURL=index.css.map */
