@@ -6,9 +6,21 @@ type ProyectsProps = {
   src: string;
   alt: string;
   title: string;
-  label: { title: string }[];
+  label: {
+    icon: boolean;
+    url?: string;
+    title: string;
+    ref?: string;
+    className?: string;
+  }[];
   description: string;
-  buttons: { title: string }[];
+  buttons: {
+    icon: boolean;
+    url?: string;
+    title: string;
+    ref?: string;
+    className?: string;
+  }[];
 };
 
 function Proyects({

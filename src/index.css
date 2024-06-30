@@ -317,6 +317,7 @@ body {
 }
 
 .btn {
+  display: flex;
   margin: 0 0.5em;
   padding: 0 1.1em;
   border-radius: 2em;
@@ -324,6 +325,16 @@ body {
   font-weight: 400;
   cursor: pointer;
   transition: all 250ms ease-out;
+}
+.btn span {
+  display: block;
+  margin-right: 0.5em;
+  width: 20px;
+  height: 100%;
+  background-size: auto 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color--neutro--white);
 }
 
 .btn:hover {
@@ -340,6 +351,10 @@ body {
   font-size: 1em;
   border: 1px solid rgb(155, 0, 10);
   cursor: pointer;
+}
+.btn--normal span {
+  width: 28px;
+  background-size: auto 28px;
 }
 .btn--normal a {
   position: relative;

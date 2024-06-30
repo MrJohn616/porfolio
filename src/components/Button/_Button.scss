@@ -1,6 +1,7 @@
 @use "./ButtonTheme";
 
 .btn {
+  display: flex;
   margin: 0 0.5em;
   padding: 0 1.1em;
   border-radius: 2em;
@@ -8,6 +9,16 @@
   font-weight: 400;
   cursor: pointer;
   transition: all 250ms ease-out;
+  span {
+    display: block;
+    margin-right: 0.5em;
+    width: 20px;
+    height: 100%;
+    background-size: auto 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color--neutro--white);
+  }
 }
 .btn:hover {
   transform: scale(110%);
@@ -22,6 +33,10 @@
   font-size: 1em;
   border: 1px solid rgb(155, 0, 10);
   cursor: pointer;
+  span {
+    width: 28px;
+    background-size: auto 28px;
+  }
   a {
     position: relative;
     top: 40%;
@@ -90,18 +105,16 @@ $gradient-end: #eef1ff;
   border: 0px;
   min-width: max-content;
 
-  // Focus styles (optional)
   &:focus {
     outline: none;
     box-shadow: 0 0 0 2px #d1d5db, 0 0 0 4px #f3f4f6;
   }
 
-  // Gradient overlay
   .gradient-overlay {
     position: absolute;
-    inset: -0.125rem; // Equivalent to -inset-0.5
+    inset: -0.125rem;
     z-index: 0;
-    border-radius: inherit; // Inherit border-radius from the parent button
+    border-radius: inherit;
     background: linear-gradient(to bottom, $gradient-start, $gradient-end);
     opacity: 0.75;
     filter: blur(5px);

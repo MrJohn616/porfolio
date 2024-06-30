@@ -29,11 +29,19 @@ const topContentItems = {
   p2: "Desarrollo de Aplicaciónes WEB",
   buttons: [
     {
+      icon: true,
+      url: "./icons/mail.svg",
       title: "Contactame",
       ref: "mailto:a351giova1nni385.francisco10@gmail.com",
     },
-    { title: "LinkedIn", ref: "https://www.linkedin.com/in/giovanni616/" },
     {
+      icon: true,
+      url: "./icons/brand-linkedin.svg",
+      title: "LinkedIn",
+      ref: "https://www.linkedin.com/in/giovanni616/",
+    },
+    {
+      icon: false,
       title: "Disponible para Trabajar",
       ref: "https://www.linkedin.com/in/giovanni616/",
       className: "button-shadow-gradient",
@@ -47,12 +55,26 @@ const proyectsItems = {
   src: "./img/proyects-Apple.webp",
   alt: "Clone Apple WEB",
   title: "Clone - Home Page de Apple",
-  label: [{ title: "React" }, { title: "Vite" }, { title: "Sass" }],
+  label: [
+    { icon: false, title: "React" },
+    { icon: false, title: "Vite" },
+    { icon: false, title: "Sass" },
+  ],
   description:
     "Página de bienvenida hecha desde cero tomando como referencia el diseño visual de la página. Creada con React y Vite. ",
   buttons: [
-    { title: "Preview", ref: "https://mrjohn616.github.io/apple-page/" },
-    { title: "Código", ref: "https://github.com/MrJohn616/apple-page" },
+    {
+      icon: true,
+      url: "./icons/app-window.svg",
+      title: "Preview",
+      ref: "https://mrjohn616.github.io/apple-page/",
+    },
+    {
+      icon: true,
+      url: "./icons/code-dots.svg",
+      title: "Código",
+      ref: "https://github.com/MrJohn616/apple-page",
+    },
   ],
 };
 

@@ -6,7 +6,13 @@ type TopContentProps = {
   title: string;
   p1: string;
   p2: string;
-  buttons: { title: string; ref?: string; className?: string }[];
+  buttons: {
+    icon: boolean;
+    url?: string;
+    title: string;
+    ref?: string;
+    className?: string;
+  }[];
 };
 
 function TopContent({ src, alt, title, p1, p2, buttons }: TopContentProps) {
