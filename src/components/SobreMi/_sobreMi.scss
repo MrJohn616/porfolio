@@ -1,0 +1,51 @@
+@use "./sobreMiTheme";
+
+.about__wrapper {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about__content {
+  padding: 0 2.5em 0 0;
+  // width: 540px;
+  p {
+    font-weight: 300;
+    padding-bottom: 1em;
+    stroke: blue;
+  }
+}
+.about__title {
+  margin-bottom: 1em;
+}
+
+.about__img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  // width: 200px;
+  img {
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .about__wrapper {
+    flex-wrap: wrap;
+    padding: 0 1.8em;
+    justify-content: center;
+    height: fit-content;
+  }
+  .about__content {
+    width: 100%;
+    p {
+      padding-bottom: 1em;
+    }
+  }
+  .about__img {
+    margin-top: 1.2em;
+    width: 60%;
+    max-width: 300px;
+  }
+}

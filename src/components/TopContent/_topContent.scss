@@ -1,0 +1,49 @@
+@use "./topContTheme";
+
+.section__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.section__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+.section__top img {
+  border-radius: 50%;
+  width: 140px;
+  min-width: 140px;
+}
+.section__body {
+  width: 550px;
+  min-width: 550px;
+  padding: 0 1.3em;
+}
+.section__body p {
+  margin: 0 0 0.75em 0;
+  font-weight: 300;
+  font-size: 1.5em;
+  strong {
+    font-weight: 400;
+    color: var(--color--secundary);
+  }
+}
+.section__btns {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .section__top {
+    height: auto;
+  }
+  .section__body {
+    width: auto;
+    min-width: auto;
+  }
+}

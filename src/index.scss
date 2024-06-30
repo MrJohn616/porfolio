@@ -1,0 +1,45 @@
+@use "./themeApp";
+@use "./reset";
+@use "./fonts";
+@use "./components/NavBar/navbar";
+@use "./components/BodyContent/bodyContent";
+@use "./components/Section/section";
+@use "./components/Button/Button";
+@use "./components/TopContent/topContent";
+@use "./components/Proyectos/proyectos";
+@use "./components/SobreMi/sobreMi";
+@use "./components/Footer/footer";
+
+$grid-color: #4f4f4f2e;
+$grid-size: 14px 24px;
+$mask-color: #000;
+
+.background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #292524; // Equivalent to bg-slate-950 in Tailwind CSS
+
+  .background--mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-image: linear-gradient(
+        to right,
+        $grid-color 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, $grid-color 1px, transparent 1px);
+    background-size: $grid-size;
+
+    // Apply mask
+    mask-image: radial-gradient(
+      ellipse 60% 50% at 50% 0%,
+      $mask-color 70%,
+      transparent 100%
+    );
+  }
+}
