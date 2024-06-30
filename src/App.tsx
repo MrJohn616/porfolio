@@ -22,7 +22,7 @@ const navbarItems = [
 ];
 
 const topContentItems = {
-  src: "/img/yo96ppi-500x500.webp",
+  src: "./img/yo96ppi-500x500.webp",
   alt: "Giovanni Gonzalez Ruiz",
   title: "Giovanni Gonzalez Ruiz",
   p1: "Programador especializado en el",
@@ -44,7 +44,7 @@ const topContentItems = {
 const proyectsItems = {
   url: " ",
   headerText: "Proyectos",
-  src: "/img/proyects-Apple.webp",
+  src: "./img/proyects-Apple.webp",
   alt: "Clone Apple WEB",
   title: "Clone - Home Page de Apple",
   label: [{ title: "React" }, { title: "Vite" }, { title: "Sass" }],
@@ -63,7 +63,7 @@ const sobreMiItems = {
     " He desarrollado habilidades en HTML, CSS, SASS, JavaScript y React ",
   p11: "a través de cursos en línea.",
   p2: "Soy un comunicador eficaz, trabajo bien en equipo y estoy siempre dispuesto a aprender. Busco una oportunidad para aplicar mis conocimientos en un entorno profesional y contribuir al desarrollo de productos web.",
-  src: "/img/yo96ppi-500x500.webp",
+  src: "./img/yo96ppi-500x500.webp",
   alt: "Giovanni Gonzalez Ruiz",
 };
 
