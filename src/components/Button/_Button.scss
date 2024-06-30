@@ -73,18 +73,23 @@
   position: relative;
   height: 1.2rem;
   margin-right: 0.1em;
-  padding: 0 1.1em;
+  padding: 0 0.7em;
   border-radius: 2em;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 0.9rem;
   letter-spacing: 0.03em;
   cursor: pointer;
+  span {
+    margin-right: 0.3em;
+    background-size: auto 14px;
+  }
   a {
     position: relative;
     top: 7px;
     display: block;
     height: 100%;
     line-height: 5px;
+    text-shadow: -1px 1px 3px #000;
   }
 }
 .btn--label:hover {
@@ -122,6 +127,17 @@ $gradient-end: #eef1ff;
 }
 .button-shadow-gradient:hover {
   box-shadow: none;
+}
+
+//Etiquetas
+.react {
+  background-color: rgb(4, 128, 153);
+}
+.vite {
+  background: linear-gradient(to right, #297c9c, #701e96);
+}
+.sass {
+  background-color: #7c385b;
 }
 
 @media screen and (max-width: 520px) {

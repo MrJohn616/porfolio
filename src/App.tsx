@@ -56,9 +56,14 @@ const proyectsItems = {
   alt: "Clone Apple WEB",
   title: "Clone - Home Page de Apple",
   label: [
-    { icon: false, title: "React" },
-    { icon: false, title: "Vite" },
-    { icon: false, title: "Sass" },
+    {
+      icon: true,
+      url: "./icons/react.svg",
+      title: "React",
+      className: "react",
+    },
+    { icon: true, url: "./icons/vitejs.svg", title: "Vite", className: "vite" },
+    { icon: true, url: "./icons/sass.svg", title: "Sass", className: "sass" },
   ],
   description:
     "Página de bienvenida hecha desde cero tomando como referencia el diseño visual de la página. Creada con React y Vite. ",
