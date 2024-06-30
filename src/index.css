@@ -555,6 +555,8 @@ body {
   width: auto;
   height: 100%;
   border-radius: 10px;
+  -o-object-position: left;
+     object-position: left;
 }
 
 .proyects__body__wrapper {
@@ -569,14 +571,14 @@ body {
 
 .proyec__b__w__label {
   display: flex;
-  margin: 0.5em 0;
+  margin: 0.8em 0;
 }
 
 .p__b__w__btns {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin: 0.7em 0;
+  margin: 0.8em 0;
 }
 
 @media screen and (max-width: 760px) {
