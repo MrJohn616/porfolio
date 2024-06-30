@@ -6,7 +6,7 @@
   --color--neutro--black: rgb(0, 0, 0);
   --color--neutro--black--opaque: rgb(33, 33, 37);
   --color--neutro--white: rgb(255, 255, 255);
-  --color--neutro--white--opaque: rgb(216, 219, 226);
+  --color--neutro--white--opaque: rgb(202, 205, 212);
   --color--transparent: rgba(0, 0, 0, 0.5);
 }
 
@@ -278,6 +278,7 @@ body {
   align-content: center;
   height: 100%;
   cursor: pointer;
+  transition: all 250ms ease-out;
 }
 
 .main {
@@ -407,6 +408,8 @@ body {
   color: #18181b;
   font-weight: bold;
   border: 0px;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 .button-shadow-gradient:focus {
   outline: none;
@@ -426,6 +429,15 @@ body {
   box-shadow: none;
 }
 
+@media screen and (max-width: 520px) {
+  .section__body .section__btns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .button-shadow-gradient {
+    margin-top: 1.2em;
+  }
+}
 .section__wrapper {
   display: flex;
   flex-wrap: wrap;

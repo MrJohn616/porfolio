@@ -88,6 +88,7 @@ $gradient-end: #eef1ff;
   color: #18181b;
   font-weight: bold;
   border: 0px;
+  min-width: max-content;
 
   // Focus styles (optional)
   &:focus {
@@ -108,4 +109,17 @@ $gradient-end: #eef1ff;
 }
 .button-shadow-gradient:hover {
   box-shadow: none;
+}
+
+@media screen and (max-width: 520px) {
+  .section__body {
+    .section__btns {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .button-shadow-gradient {
+    margin-top: 1.2em;
+  }
 }
