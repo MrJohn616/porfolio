@@ -50,7 +50,7 @@ const topContentItems = {
 };
 
 const proyectsItems = {
-  url: " ",
+  url: "./icons/prompt.svg",
   headerText: "Proyectos",
   src: "./img/proyects-Apple.webp",
   alt: "Clone Apple WEB",
@@ -84,6 +84,7 @@ const proyectsItems = {
 };
 
 const sobreMiItems = {
+  url: "./icons/robot.svg",
   title: "Sobre mí",
   p1: "Desarrollador web front-end con una sólida base de conocimientos adquirida de forma autodidacta.",
   strong1:
@@ -132,6 +133,7 @@ function App() {
         </Section>
         <Section id="sobreMi">
           <SobreMi
+            url={sobreMiItems.url}
             title={sobreMiItems.title}
             p1={sobreMiItems.p1}
             strong1={sobreMiItems.strong1}
