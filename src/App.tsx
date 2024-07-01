@@ -32,7 +32,7 @@ const topContentItems = {
       icon: true,
       url: "./icons/mail.svg",
       title: "Contactame",
-      ref: "mailto:a351giova1nni385.francisco10@gmail.com",
+      ref: "mailto:giog.contacto@gmail.com",
     },
     {
       icon: true,
@@ -97,7 +97,7 @@ const sobreMiItems = {
 const footerItems = {
   p: "Porfolio inspirado en Proyecto de ",
   ref1: "https://github.com/midudev",
-  a1: "midudev",
+  a1: " midudev",
   ref2: "https://porfolio.dev/",
   a2: " porfolio.dev",
 };
@@ -105,8 +105,7 @@ const footerItems = {
 function App() {
   return (
     <>
-      <div className="background">
-      </div>
+      <div className="background"></div>
       <NavBar itemData={navbarItems}></NavBar>
       <BodyContent>
         <Section id="contacto">
