@@ -53,3 +53,14 @@
     align-self: flex-end;
   }
 }
+
+@media screen and (max-width: 790px) {
+  .footer__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__content div:nth-child(2) {
+    margin-top: 1em;
+    justify-content: center;
+  }
+}

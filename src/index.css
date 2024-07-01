@@ -561,7 +561,7 @@ body {
 
 .proyects__body__wrapper {
   padding: 0 1.8em;
-  flex-shrink: 10;
+  flex-shrink: 14;
   height: 100%;
 }
 .proyects__body__wrapper p {
@@ -716,6 +716,16 @@ body {
   align-self: flex-end;
 }
 
+@media screen and (max-width: 790px) {
+  .footer__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__content div:nth-child(2) {
+    margin-top: 1em;
+    justify-content: center;
+  }
+}
 #root {
   background-color: #000;
 }
