@@ -6,6 +6,8 @@ import Proyects from "./components/Proyectos";
 import SobreMi from "./components/SobreMi";
 import Footer from "./components/Footer";
 
+// import ThemeSwitcher from "./components/changeTheme";
+
 const navbarItems = [
   {
     id: "contacto",
@@ -50,7 +52,7 @@ const topContentItems = {
 };
 
 const proyectsItems = {
-  url: "./icons/prompt.svg",
+  // url: "./icons/prompt.svg",
   headerText: "Proyectos",
   src: "./img/proyects-Apple.webp",
   alt: "Clone Apple WEB",
@@ -109,6 +111,11 @@ function App() {
       <div className="background"></div>
       <NavBar itemData={navbarItems}></NavBar>
       <BodyContent>
+        {/* <Section id="prueba">
+          <ThemeSwitcher>
+            <div></div>
+          </ThemeSwitcher>
+        </Section> */}
         <Section id="contacto">
           <TopContent
             src={topContentItems.src}
@@ -121,7 +128,7 @@ function App() {
         </Section>
         <Section id="proyectos">
           <Proyects
-            url={proyectsItems.url}
+            // url={proyectsItems.url}
             headerText={proyectsItems.headerText}
             src={proyectsItems.src}
             alt={proyectsItems.alt}
@@ -133,7 +140,7 @@ function App() {
         </Section>
         <Section id="sobreMi">
           <SobreMi
-            url={sobreMiItems.url}
+            // url={sobreMiItems.url}
             title={sobreMiItems.title}
             p1={sobreMiItems.p1}
             strong1={sobreMiItems.strong1}

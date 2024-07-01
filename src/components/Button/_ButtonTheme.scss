@@ -3,3 +3,36 @@
   background-color: var(--color--primary);
   color: var(--color--neutro--white--opaque);
 }
+.btn span {
+  color: var(--color--neutro--black);
+}
+.btn--label a {
+  color: var(--color--neutro--white);
+}
+.btn--medium a {
+  color: var(--color--neutro--white);
+}
+.button-shadow-gradient a {
+  color: var(--color--neutro--black);
+}
+.btn--normal a {
+  color: var(--color--neutro--white);
+}
+
+@media (prefers-color-scheme: light) {
+  .btn span {
+    color: var(--color--neutro--white);
+  }
+  .btn--medium a {
+    color: var(--color--neutro--black);
+  }
+  .btn--label a {
+    color: var(--color--neutro--black);
+  }
+  .btn--normal a {
+    color: var(--color--neutro--black);
+  }
+  .button-shadow-gradient a {
+    text-shadow: -1px 1px 3px var(--color--btn--gradient--fontShadow);
+  }
+}

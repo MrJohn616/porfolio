@@ -10,13 +10,12 @@
 @use "./components/SobreMi/sobreMi";
 @use "./components/Footer/footer";
 
-$grid-color: #4f4f4f2e;
+$grid-color: var(--color--neutro--black--background);
 $grid-size: 14px 29px;
-$mask-color: #000;
+$mask-color: var(--color--neutro--black);
 
 #root {
-  // position: relative;
-  background-color: #000;
+  background-color: var(--color--neutro--black);
   .background {
     position: fixed;
     top: 45px;

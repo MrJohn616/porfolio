@@ -17,7 +17,6 @@
     background-size: auto 20px;
     background-position: center;
     background-repeat: no-repeat;
-    color: var(--color--neutro--white);
   }
 }
 .btn:hover {
@@ -96,16 +95,16 @@
   transform: scale(100%);
 }
 
-$gradient-start: #eef1ff;
-$gradient-end: #eef1ff;
+$gradient-start: var(--color--btn--gradient--shadow-start);
+$gradient-end: var(--color--btn--gradient--shadow-end);
 
 .button-shadow-gradient {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  color: #18181b;
+  background-color: var(--color--btn--gradient--background);
+  color: #fff;
   font-weight: bold;
   border: 0px;
   min-width: max-content;

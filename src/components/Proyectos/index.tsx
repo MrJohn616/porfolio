@@ -1,7 +1,8 @@
 import Button from "../Button";
+import Prompt from "../IconsComponents/prompt";
 
 type ProyectsProps = {
-  url: string;
+  // url?: string;
   headerText: string;
   src: string;
   alt: string;
@@ -24,7 +25,7 @@ type ProyectsProps = {
 };
 
 function Proyects({
-  url,
+  // url,
   headerText,
   src,
   alt,
@@ -36,7 +37,8 @@ function Proyects({
   return (
     <div className="proyects__wrapper">
       <div className="proyects__top">
-        <span style={{ backgroundImage: `url(${url})` }}></span>
+        <Prompt></Prompt>
+        {/* <span style={{ backgroundImage: `url(${url})` }}></span> */}
         <h2>{headerText}</h2>
       </div>
       <div className="proyects__body">

@@ -1,5 +1,7 @@
+import Robot from "../IconsComponents/robot";
+
 type SobreMiProps = {
-  url: string;
+  // url: string;
   title: string;
   p1: string;
   strong1?: string;
@@ -12,7 +14,7 @@ type SobreMiProps = {
 };
 
 function SobreMi({
-  url,
+  // url,
   title,
   p1,
   strong1,
@@ -27,7 +29,8 @@ function SobreMi({
     <div className="about__wrapper">
       <div className="about__content">
         <div className="about__title">
-          <span style={{ backgroundImage: `url(${url})` }}></span>
+          <Robot></Robot>
+          {/* <span style={{ backgroundImage: `url(${url})` }}></span> */}
           <h2>{title}</h2>
         </div>
         <p>
