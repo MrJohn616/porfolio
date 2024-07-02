@@ -1,20 +1,16 @@
 import React, { createContext, useState, useEffect } from "react";
 
-export interface ThemeContextType {
+export type ThemeContextType = {
   theme: "light" | "dark" | "system";
   setTheme: (theme: "light" | "dark" | "system") => void;
-}
+};
 
 export const ThemeContext = createContext<ThemeContextType>({
   theme: "system",
   setTheme: () => {},
 });
 
-export default function ThemeProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<ThemeContextType["theme"]>("system");
 
   useEffect(() => {

@@ -9,6 +9,7 @@
 @use "./components/Proyectos/proyectos";
 @use "./components/SobreMi/sobreMi";
 @use "./components/Footer/footer";
+@use "./components//changeTheme/switcher.scss";
 
 $grid-color: var(--color--neutro--black--background);
 $grid-size: 14px 29px;

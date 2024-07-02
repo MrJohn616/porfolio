@@ -10,6 +10,9 @@
   --color--neutro--white--opaque: rgb(202, 205, 212);
   --color--transparent: rgba(0, 0, 0, 0.5);
 
+  // Botones
+  --color--btn: var(--color--neutro--white);
+
   // Btn "Disponible para Trabajar
   --color--btn--gradient--background: var(--color--neutro--white);
   --color--btn--gradient--shadow-start: var(--color--neutro--white);
@@ -17,26 +20,69 @@
   --color--btn--gradient--fontShadow: rgba(0, 0, 0, 0.6);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --color--primary: rgb(86, 7, 12);
-    --color--primary--blur: rgba(86, 7, 12, 0.7);
-    --color--secundary: rgb(212, 175, 55);
-    --color--neutro--black: rgb(255, 255, 255);
-    --color--neutro--black--opaque: rgb(202, 205, 212);
-    --color--neutro--black--background: rgba(176, 176, 176, 0.18);
-    --color--neutro--white: rgb(0, 0, 0);
-    --color--neutro--white--opaque: rgb(33, 33, 37);
-    --color--transparent: rgba(255, 255, 255, 0.5);
+[data-theme="dark"] {
+  //Paleta de colores
+  --color--primary: rgb(86, 7, 12);
+  --color--primary--blur: rgba(86, 7, 12, 0.7);
+  --color--secundary: rgb(212, 175, 55);
+  --color--neutro--black: rgb(0, 0, 0);
+  --color--neutro--black--opaque: rgb(33, 33, 37);
+  --color--neutro--black--background: rgba(79, 79, 79, 0.18);
+  --color--neutro--white: rgb(255, 255, 255);
+  --color--neutro--white--opaque: rgb(202, 205, 212);
+  --color--transparent: rgba(0, 0, 0, 0.5);
 
-    // Btn "Disponibilidad"
-    --color--btn--gradient--background: rgb(0, 255, 22);
-    --color--btn--gradient--shadow-start: var(
-      --color--btn--gradient--background
-    );
-    --color--btn--gradient--shadow-end: var(--color--btn--gradient--background);
-  }
+  // Botones
+  --color--btn: var(--color--neutro--white);
+
+  // Btn "Disponible para Trabajar
+  --color--btn--gradient--background: var(--color--neutro--white);
+  --color--btn--gradient--shadow-start: var(--color--neutro--white);
+  --color--btn--gradient--shadow-end: var(--color--neutro--white);
+  --color--btn--gradient--fontShadow: rgba(0, 0, 0, 0.6);
 }
+
+[data-theme="light"] {
+  --color--primary: rgb(86, 7, 12);
+  --color--primary--blur: rgba(86, 7, 12, 0.7);
+  --color--secundary: rgb(212, 175, 55);
+  --color--neutro--black: rgb(255, 255, 255);
+  --color--neutro--black--opaque: rgb(202, 205, 212);
+  --color--neutro--black--background: rgba(176, 176, 176, 0.18);
+  --color--neutro--white: rgb(0, 0, 0);
+  --color--neutro--white--opaque: rgb(33, 33, 37);
+  --color--transparent: rgba(255, 255, 255, 0.5);
+
+  // Botones
+  --color--btn: var(--color--neutro--black);
+
+  // Btn "Disponibilidad"
+  --color--btn--gradient--background: rgb(0, 255, 22);
+  --color--btn--gradient--shadow-start: var(--color--btn--gradient--background);
+  --color--btn--gradient--shadow-end: var(--color--btn--gradient--background);
+  --color--btn--gradient--fontShadow: rgba(0, 0, 0, 0.6);
+}
+
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     --color--primary: rgb(86, 7, 12);
+//     --color--primary--blur: rgba(86, 7, 12, 0.7);
+//     --color--secundary: rgb(212, 175, 55);
+//     --color--neutro--black: rgb(255, 255, 255);
+//     --color--neutro--black--opaque: rgb(202, 205, 212);
+//     --color--neutro--black--background: rgba(176, 176, 176, 0.18);
+//     --color--neutro--white: rgb(0, 0, 0);
+//     --color--neutro--white--opaque: rgb(33, 33, 37);
+//     --color--transparent: rgba(255, 255, 255, 0.5);
+
+//     // Btn "Disponibilidad"
+//     --color--btn--gradient--background: rgb(0, 255, 22);
+//     --color--btn--gradient--shadow-start: var(
+//       --color--btn--gradient--background
+//     );
+//     --color--btn--gradient--shadow-end: var(--color--btn--gradient--background);
+//   }
+// }
 
 ::selection {
   background-color: var(--color--neutro--white);

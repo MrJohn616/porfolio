@@ -6,7 +6,8 @@ import Proyects from "./components/Proyectos";
 import SobreMi from "./components/SobreMi";
 import Footer from "./components/Footer";
 
-// import ThemeSwitcher from "./components/changeTheme";
+import { ThemeProvider } from "./components/changeTheme";
+
 
 const navbarItems = [
   {
@@ -108,56 +109,58 @@ const footerItems = {
 function App() {
   return (
     <>
-      <div className="background"></div>
-      <NavBar itemData={navbarItems}></NavBar>
-      <BodyContent>
-        {/* <Section id="prueba">
+      <ThemeProvider>
+        <div className="background"></div>
+        <NavBar itemData={navbarItems}></NavBar>
+        <BodyContent>
+          {/* <Section id="prueba">
           <ThemeSwitcher>
             <div></div>
           </ThemeSwitcher>
         </Section> */}
-        <Section id="contacto">
-          <TopContent
-            src={topContentItems.src}
-            alt={topContentItems.alt}
-            title={topContentItems.title}
-            p1={topContentItems.p1}
-            p2={topContentItems.p2}
-            buttons={topContentItems.buttons}
-          ></TopContent>
-        </Section>
-        <Section id="proyectos">
-          <Proyects
-            // url={proyectsItems.url}
-            headerText={proyectsItems.headerText}
-            src={proyectsItems.src}
-            alt={proyectsItems.alt}
-            title={proyectsItems.title}
-            label={proyectsItems.label}
-            description={proyectsItems.description}
-            buttons={proyectsItems.buttons}
-          ></Proyects>
-        </Section>
-        <Section id="sobreMi">
-          <SobreMi
-            // url={sobreMiItems.url}
-            title={sobreMiItems.title}
-            p1={sobreMiItems.p1}
-            strong1={sobreMiItems.strong1}
-            p11={sobreMiItems.p11}
-            p2={sobreMiItems.p2}
-            src={sobreMiItems.src}
-            alt={sobreMiItems.alt}
-          ></SobreMi>
-        </Section>
-        <Footer
-          p={footerItems.p}
-          ref1={footerItems.ref1}
-          a1={footerItems.a1}
-          ref2={footerItems.ref2}
-          a2={footerItems.a2}
-        ></Footer>
-      </BodyContent>
+          <Section id="contacto">
+            <TopContent
+              src={topContentItems.src}
+              alt={topContentItems.alt}
+              title={topContentItems.title}
+              p1={topContentItems.p1}
+              p2={topContentItems.p2}
+              buttons={topContentItems.buttons}
+            ></TopContent>
+          </Section>
+          <Section id="proyectos">
+            <Proyects
+              // url={proyectsItems.url}
+              headerText={proyectsItems.headerText}
+              src={proyectsItems.src}
+              alt={proyectsItems.alt}
+              title={proyectsItems.title}
+              label={proyectsItems.label}
+              description={proyectsItems.description}
+              buttons={proyectsItems.buttons}
+            ></Proyects>
+          </Section>
+          <Section id="sobreMi">
+            <SobreMi
+              // url={sobreMiItems.url}
+              title={sobreMiItems.title}
+              p1={sobreMiItems.p1}
+              strong1={sobreMiItems.strong1}
+              p11={sobreMiItems.p11}
+              p2={sobreMiItems.p2}
+              src={sobreMiItems.src}
+              alt={sobreMiItems.alt}
+            ></SobreMi>
+          </Section>
+          <Footer
+            p={footerItems.p}
+            ref1={footerItems.ref1}
+            a1={footerItems.a1}
+            ref2={footerItems.ref2}
+            a2={footerItems.a2}
+          ></Footer>
+        </BodyContent>
+      </ThemeProvider>
     </>
   );
 }

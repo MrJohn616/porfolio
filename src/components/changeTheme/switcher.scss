@@ -1,0 +1,46 @@
+@use "./switcherTheme";
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+.dropdown__content {
+  position: absolute;
+  top: -114px;
+  transition: top 250ms ease-out, opacity 250ms ease-out;
+  z-index: -1;
+  opacity: 0;
+  li {
+    width: 100%;
+    height: auto;
+    button {
+      padding: 0.7em 1em;
+      width: 100%;
+      height: 100%;
+      text-align: start;
+      cursor: pointer;
+    }
+  }
+}
+.dropdown__content li:hover {
+  background-color: var(--color--neutro--white);
+  color: var(--color--neutro--black--opaque);
+}
+.dropdown__content li:nth-child(1) {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.dropdown__content li:nth-last-child(1) {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.dropdown:hover .dropdown__content {
+  display: inline-block;
+  top: var(--navbar-h);
+  -webkit-backdrop-filter: blur(15px) contrast(90%);
+  backdrop-filter: blur(15px) contrast(90%);
+  opacity: 1;
+}

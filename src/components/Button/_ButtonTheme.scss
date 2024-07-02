@@ -7,32 +7,35 @@
   color: var(--color--neutro--black);
 }
 .btn--label a {
-  color: var(--color--neutro--white);
+  color: var(--color--btn);
 }
 .btn--medium a {
-  color: var(--color--neutro--white);
+  color: var(--color--btn);
 }
 .button-shadow-gradient a {
   color: var(--color--neutro--black);
 }
+.button-shadow-gradient a {
+  text-shadow: -1px 1px 3px var(--color--btn--gradient--fontShadow);
+}
 .btn--normal a {
-  color: var(--color--neutro--white);
+  color: var(--color--btn);
 }
 
-@media (prefers-color-scheme: light) {
-  .btn span {
-    color: var(--color--neutro--white);
-  }
-  .btn--medium a {
-    color: var(--color--neutro--black);
-  }
-  .btn--label a {
-    color: var(--color--neutro--black);
-  }
-  .btn--normal a {
-    color: var(--color--neutro--black);
-  }
-  .button-shadow-gradient a {
-    text-shadow: -1px 1px 3px var(--color--btn--gradient--fontShadow);
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   .btn span {
+//     color: var(--color--neutro--white);
+//   }
+//   .btn--medium a {
+//     color: var(--color--neutro--black);
+//   }
+//   .btn--label a {
+//     color: var(--color--neutro--black);
+//   }
+//   .btn--normal a {
+//     color: var(--color--neutro--black);
+//   }
+//   .button-shadow-gradient a {
+//     text-shadow: -1px 1px 3px var(--color--btn--gradient--fontShadow);
+//   }
+// }
