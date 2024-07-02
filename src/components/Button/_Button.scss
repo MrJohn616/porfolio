@@ -12,7 +12,6 @@
   span {
     display: block;
     margin-right: 0.5em;
-    width: 20px;
     height: 100%;
     background-size: auto 20px;
     background-position: center;
@@ -24,6 +23,8 @@
 }
 .btn--normal {
   position: relative;
+  display: flex;
+  align-items: center;
   height: 2.5rem;
   margin-right: 1.2em;
   padding: 0 1.1em;
@@ -32,16 +33,17 @@
   font-size: 1em;
   border: 1px solid rgb(155, 0, 10);
   cursor: pointer;
-  span {
+  span:first-child {
     width: 28px;
-    background-size: auto 28px;
+    height: 100%;
+    background-size: 28px auto;
   }
-  a {
+  span:last-child {
     position: relative;
     top: -1px;
     display: flex;
     align-items: center;
-    height: 100%;
+    width: auto;
   }
 }
 .btn--normal:hover {
@@ -57,12 +59,17 @@
   font-size: 1em;
   border: 1px solid rgb(155, 0, 10);
   cursor: pointer;
-  a {
+  span:first-child {
+    width: 20px;
+    height: 100%;
+    background-size: 20px auto;
+  }
+  span:last-child {
     position: relative;
     top: -1px;
     display: flex;
     align-items: center;
-    height: 100%;
+    width: auto;
   }
 }
 .btn--medium:hover {
@@ -78,16 +85,17 @@
   font-size: 0.9rem;
   letter-spacing: 0.03em;
   cursor: pointer;
-  span {
-    margin-right: 0.3em;
-    background-size: auto 14px;
+  span:first-child {
+    width: 14px;
+    height: 100%;
+    background-size: 14px auto;
   }
-  a {
+  span:last-child {
     position: relative;
+    top: -1px;
     display: flex;
     align-items: center;
-    top: -1px;
-    height: 100%;
+    width: auto;
     text-shadow: -1px 1px 3px #000;
   }
 }
@@ -139,14 +147,32 @@ $gradient-end: var(--color--btn--gradient--shadow-end);
   background-color: #7c385b;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 800px) {
+  .section__body {
+    .section__btns {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  .button-shadow-gradient {
+    margin-top: 1.2em;
+  }
+}
+
+@media screen and (max-width: 760px) {
   .section__body {
     .section__btns {
       flex-wrap: wrap;
       justify-content: center;
     }
   }
+  .button-shadow-gradient {
+    margin-top: 0em;
+  }
+}
 
+@media screen and (max-width: 645px) {
   .button-shadow-gradient {
     margin-top: 1.2em;
   }

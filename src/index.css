@@ -337,7 +337,7 @@ body {
 }
 
 .main__content {
-  width: 950px;
+  width: 1024px;
   height: inherit;
 }
 
@@ -366,23 +366,23 @@ body {
   color: var(--color--neutro--black);
 }
 
-.btn--label a {
+.btn--label span {
   color: var(--color--btn);
 }
 
-.btn--medium a {
+.btn--medium span {
   color: var(--color--btn);
 }
 
-.button-shadow-gradient a {
+.button-shadow-gradient span {
   color: var(--color--neutro--black);
 }
 
-.button-shadow-gradient a {
+.button-shadow-gradient span {
   text-shadow: -1px 1px 3px var(--color--btn--gradient--fontShadow);
 }
 
-.btn--normal a {
+.btn--normal span {
   color: var(--color--btn);
 }
 
@@ -399,7 +399,6 @@ body {
 .btn span {
   display: block;
   margin-right: 0.5em;
-  width: 20px;
   height: 100%;
   background-size: auto 20px;
   background-position: center;
@@ -412,6 +411,8 @@ body {
 
 .btn--normal {
   position: relative;
+  display: flex;
+  align-items: center;
   height: 2.5rem;
   margin-right: 1.2em;
   padding: 0 1.1em;
@@ -421,16 +422,17 @@ body {
   border: 1px solid rgb(155, 0, 10);
   cursor: pointer;
 }
-.btn--normal span {
+.btn--normal span:first-child {
   width: 28px;
-  background-size: auto 28px;
+  height: 100%;
+  background-size: 28px auto;
 }
-.btn--normal a {
+.btn--normal span:last-child {
   position: relative;
   top: -1px;
   display: flex;
   align-items: center;
-  height: 100%;
+  width: auto;
 }
 
 .btn--normal:hover {
@@ -448,12 +450,17 @@ body {
   border: 1px solid rgb(155, 0, 10);
   cursor: pointer;
 }
-.btn--medium a {
+.btn--medium span:first-child {
+  width: 20px;
+  height: 100%;
+  background-size: 20px auto;
+}
+.btn--medium span:last-child {
   position: relative;
   top: -1px;
   display: flex;
   align-items: center;
-  height: 100%;
+  width: auto;
 }
 
 .btn--medium:hover {
@@ -471,16 +478,17 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
 }
-.btn--label span {
-  margin-right: 0.3em;
-  background-size: auto 14px;
+.btn--label span:first-child {
+  width: 14px;
+  height: 100%;
+  background-size: 14px auto;
 }
-.btn--label a {
+.btn--label span:last-child {
   position: relative;
+  top: -1px;
   display: flex;
   align-items: center;
-  top: -1px;
-  height: 100%;
+  width: auto;
   text-shadow: -1px 1px 3px #000;
 }
 
@@ -530,11 +538,25 @@ body {
   background-color: #7c385b;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 800px) {
+  .section__body .section__btns {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .button-shadow-gradient {
+    margin-top: 1.2em;
+  }
+}
+@media screen and (max-width: 760px) {
   .section__body .section__btns {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .button-shadow-gradient {
+    margin-top: 0em;
+  }
+}
+@media screen and (max-width: 645px) {
   .button-shadow-gradient {
     margin-top: 1.2em;
   }
@@ -630,6 +652,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  width: 100%;
   height: 100%;
 }
 .proyects__img__wrapper img {
@@ -642,8 +665,9 @@ body {
 
 .proyects__body__wrapper {
   padding: 0 1.8em;
-  flex-shrink: 14;
+  flex-shrink: 10;
   height: 100%;
+  min-width: 385px;
 }
 .proyects__body__wrapper p {
   width: 100%;
@@ -692,10 +716,12 @@ body {
 .about__wrapper {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .about__content {
   padding: 0 2.5em 0 0;
+  max-width: 600px;
 }
 .about__content p {
   font-weight: 300;
@@ -725,7 +751,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
 }
 .about__img img {
   border-radius: 50%;
@@ -793,7 +821,7 @@ body {
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: auto;
 }
 .footer__content div:nth-child(2) a {
   margin-left: 2em;
@@ -810,7 +838,7 @@ body {
   align-self: flex-end;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 725px) {
   .footer__content {
     flex-wrap: wrap;
     justify-content: center;
@@ -818,6 +846,11 @@ body {
   .footer__content div:nth-child(2) {
     margin-top: 1em;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footer {
+    padding: 0 1.8em;
   }
 }
 .dropdown__content li {

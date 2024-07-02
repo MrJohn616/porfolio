@@ -1,5 +1,4 @@
 import React from "react";
-// import Logo from "../../../public/icons/mail.svg?react";
 
 type ButtonProps = {
   className?: string;
@@ -26,17 +25,22 @@ function Button({ className, buttons }: ButtonProps) {
           },
           i: React.Key
         ) => (
-          <button key={i} className={`btn ${className} ${item.className}`}>
+          <a
+            href={item.ref}
+            target="_blank"
+            key={i}
+            className={`btn ${className} ${item.className}`}
+          >
             {item.className === "button-shadow-gradient" ? (
               <div className="gradient-overlay"></div>
             ) : null}
             {item.icon && (
               <span style={{ backgroundImage: `url("${item.url}")` }}></span>
             )}
-            <a href={item.ref} target="_blank">
-              {item.title}
-            </a>
-          </button>
+            {/* <a href={item.ref} target="_blank"> */}
+            <span>{item.title}</span>
+            {/* </a> */}
+          </a>
         )
       )}
     </>
