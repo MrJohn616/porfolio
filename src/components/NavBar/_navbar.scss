@@ -43,3 +43,12 @@ body {
     transition: all 250ms ease-out;
   }
 }
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    justify-content: flex-start;
+    .navbar__ul {
+      margin: 0;
+    }
+  }
+}
