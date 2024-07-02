@@ -827,8 +827,9 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 10px;
-  width: 152px;
+  width: 140px;
   height: 100%;
+  font-size: 0.9em;
   cursor: pointer;
 }
 
