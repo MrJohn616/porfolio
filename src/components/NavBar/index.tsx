@@ -18,15 +18,9 @@ function NavBar({ itemData }: { itemData: NavBarProps[] }) {
             <a href={`#${item.id}`}>{item.title}</a>
           </li>
         ))}
-        <li className="navbar__li">
-          <ThemeSwitcher></ThemeSwitcher>
-          {/* <button
-            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-          >
-            Cambiar tema
-          </button> */}
-        </li>
       </ul>
+
+      <ThemeSwitcher></ThemeSwitcher>
     </nav>
   );
 }
