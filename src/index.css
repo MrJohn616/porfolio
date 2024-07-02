@@ -647,7 +647,7 @@ body {
 }
 
 .proyects__img__wrapper {
-  flex-shrink: 8;
+  flex-shrink: 9;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -667,7 +667,6 @@ body {
   padding: 0 1.8em;
   flex-shrink: 10;
   height: 100%;
-  min-width: 385px;
 }
 .proyects__body__wrapper p {
   width: 100%;
@@ -686,7 +685,7 @@ body {
   margin: 0.8em 0;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 860px) {
   .proyects__wrapper {
     padding: 0 1.8em;
   }
