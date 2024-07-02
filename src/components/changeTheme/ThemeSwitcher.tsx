@@ -11,7 +11,8 @@ export default function ThemeSwitcher() {
   return (
     <div className="dropdown">
       <span>
-        {theme == "system" ? "Sistema" : theme == "dark" ? "Oscuro" : "Claro"}
+        {/* {theme == "system" ? "Sistema" : theme == "dark" ? "Oscuro" : "Claro"} */}
+        Tema
       </span>
       <ul className="dropdown__content">
         <li>
