@@ -1,9 +1,10 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 type ButtonProps = {
   className?: string;
   buttons: {
     icon: boolean;
+    children?: ReactNode;
     url?: string;
     title: string;
     ref?: string;
@@ -11,13 +12,14 @@ type ButtonProps = {
   }[];
 };
 
-function Button({ className, buttons }: ButtonProps) {
+export default function Button({ className, buttons }: ButtonProps) {
   return (
     <>
       {buttons.map(
         (
           item: {
             icon: boolean;
+            children?: ReactNode;
             url?: string;
             title: string;
             ref?: string;
@@ -34,16 +36,11 @@ function Button({ className, buttons }: ButtonProps) {
             {item.className === "button-shadow-gradient" ? (
               <div className="gradient-overlay"></div>
             ) : null}
-            {item.icon && (
-              <span style={{ backgroundImage: `url("${item.url}")` }}></span>
-            )}
-            {/* <a href={item.ref} target="_blank"> */}
+            {item.icon && <>{item.children}</>}
             <span>{item.title}</span>
-            {/* </a> */}
           </a>
         )
       )}
     </>
   );
 }
-export default Button;
