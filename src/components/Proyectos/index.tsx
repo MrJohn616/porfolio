@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import Button from "../Button";
 import Prompt from "../IconsComponents/prompt";
 
@@ -9,6 +10,7 @@ type ProyectsProps = {
   title: string;
   label: {
     icon: boolean;
+    children: ReactNode;
     url?: string;
     title: string;
     ref?: string;
@@ -17,6 +19,7 @@ type ProyectsProps = {
   description: string;
   buttons: {
     icon: boolean;
+    children: ReactNode;
     url?: string;
     title: string;
     ref?: string;
@@ -37,8 +40,7 @@ function Proyects({
   return (
     <div className="proyects__wrapper">
       <div className="proyects__top">
-        <Prompt></Prompt>
-        {/* <span style={{ backgroundImage: `url(${url})` }}></span> */}
+        <Prompt />
         <h2>{headerText}</h2>
       </div>
       <div className="proyects__body">

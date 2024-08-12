@@ -388,6 +388,7 @@ body {
 
 .btn {
   display: flex;
+  align-items: center;
   margin: 0 0.5em;
   padding: 0 1.1em;
   border-radius: 2em;
@@ -398,7 +399,7 @@ body {
 }
 .btn span {
   display: block;
-  margin-right: 0.5em;
+  margin: 0 0.5em;
   height: 100%;
   background-size: auto 20px;
   background-position: center;
@@ -627,14 +628,6 @@ body {
   display: flex;
   margin-bottom: 1em;
   align-items: center;
-}
-.proyects__top span {
-  display: inline-block;
-  width: 40px;
-  height: 100%;
-  background-size: auto 40px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .proyects__top h2 {
   margin-left: 0.5em;

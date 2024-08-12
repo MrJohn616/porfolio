@@ -8,6 +8,14 @@ import Footer from "./components/Footer";
 
 import { ThemeProvider } from "./components/changeTheme";
 
+//Button Normal
+import { AppWindow } from "./components/IconsComponents/app-windows";
+import { CodeDots } from "./components/IconsComponents/code-dots";
+
+//Button Labels
+import { BrandReact } from "./components/IconsComponents/brand-react";
+import { BrandVite } from "./components/IconsComponents/brand-vite";
+import { BrandSass } from "./components/IconsComponents/brand-sass";
 
 const navbarItems = [
   {
@@ -61,24 +69,39 @@ const proyectsItems = {
   label: [
     {
       icon: true,
+      children: <BrandReact />,
       url: "./icons/react.svg",
       title: "React",
       className: "react",
     },
-    { icon: true, url: "./icons/vitejs.svg", title: "Vite", className: "vite" },
-    { icon: true, url: "./icons/sass.svg", title: "Sass", className: "sass" },
+    {
+      icon: true,
+      children: <BrandVite />,
+      url: "./icons/vitejs.svg",
+      title: "Vite",
+      className: "vite",
+    },
+    {
+      icon: true,
+      children: <BrandSass />,
+      url: "./icons/sass.svg",
+      title: "Sass",
+      className: "sass",
+    },
   ],
   description:
     "Página de bienvenida hecha desde cero tomando como referencia el diseño visual de la página. Creada con React y Vite. ",
   buttons: [
     {
       icon: true,
+      children: <AppWindow />,
       url: "./icons/app-window.svg",
       title: "Preview",
       ref: "https://mrjohn616.github.io/apple-page/",
     },
     {
       icon: true,
+      children: <CodeDots />,
       url: "./icons/code-dots.svg",
       title: "Código",
       ref: "https://github.com/MrJohn616/apple-page",
